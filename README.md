@@ -13,7 +13,7 @@ The repository has two finalized, independent scripts (in `Final/`):
 
 ---
 
-## 1. `Final/BalancedDetection.m` — experimental analysis
+## 1. `BalancedDetection.m` — experimental analysis
 
 Loads a multi-frame ND2 stack and processes it end to end:
 
@@ -50,7 +50,7 @@ Other tunable knobs: `photonMin/photonMax` (event filter), `level_frac` and
 
 ---
 
-## 2. `Final/MCsimulation_final.m` — Monte-Carlo simulation
+## 2. `MCsimulation_final.m` — Monte-Carlo simulation
 
 Convolves a reference dye spectrum with the microscope PSF, disperses it onto a
 16-row detector, adds Poisson (signal + background) and Gaussian (readout) noise,
