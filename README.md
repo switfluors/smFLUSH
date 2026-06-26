@@ -9,6 +9,7 @@ The repository has two finalized, independent scripts (in `Final/`):
 | `BalancedDetection.m` | **Experiment.** Analyze a real ND2 movie: extract single-molecule spectra and compute their spectral centroids by the Balanced Method. |
 | `MCsimulation_final.m` | **Simulation.** Monte-Carlo model of centroid precision/accuracy vs. photon budget and analysis-window choice. |
 | `Alexa_Fluor_647.csv` | Reference emission spectrum used by the simulation (col 1 = wavelength nm, col 3 = intensity). |
+| `bfmatlab/` | Bundled **Bio-Formats** MATLAB toolbox. Provides `bfopen`, used by the experiment script to read `.nd2` microscope stacks. Add it to the MATLAB path before running (see below). |
 
 ---
 
@@ -27,10 +28,13 @@ Loads a multi-frame ND2 stack and processes it end to end:
    (c) centroid histogram — and log results.
 
 **Requirements:** the **Bio-Formats** toolbox (`bfmatlab`) on the MATLAB path.
+The `bfmatlab/` folder is bundled in this repository — it is the Open Microscopy
+Environment's MATLAB reader that lets MATLAB open proprietary `.nd2` files via
+`bfopen`. Point `addpath` at wherever you place this folder.
 
 **Edit before running** (top of the script):
 ```matlab
-addpath('D:\bfmatlab')                              % Bio-Formats location
+addpath('D:\bfmatlab')                              % Bio-Formats location (the bundled bfmatlab/ folder)
 nd2FilePath    = 'D:\...\00.nd2';               % input movie
 outputFilePath = 'D:\...\G1.xlsx';                  % Excel log; output folder derived from it
 ```
