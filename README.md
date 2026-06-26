@@ -1,7 +1,7 @@
 # Balanced Detection Method and MC-simulation
 
-MATLAB code for single-molecule emission-spectrum **centroid** estimation by the
-**Balanced Method**, plus a Monte-Carlo study of its precision and accuracy.
+MATLAB code for single-molecule spectral centroid estimation by the
+**Balanced Method**, plus a Monte-Carlo simulation of its precision and accuracy.
 
 | Script | Purpose |
 |--------|---------|
