@@ -1,4 +1,4 @@
-# Balanced-Method Spectral Centroid (smFLUSH / DNA-PAINT)
+# Balanced Detection Method and MC-simulation
 
 MATLAB code for single-molecule emission-spectrum **centroid** estimation by the
 **Balanced Method**, plus a Monte-Carlo study of its precision and accuracy.
