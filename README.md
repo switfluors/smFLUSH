@@ -2,7 +2,6 @@
 
 MATLAB code for single-molecule emission-spectrum **centroid** estimation by the
 **Balanced Method**, plus a Monte-Carlo study of its precision and accuracy.
-The repository has two finalized, independent scripts (in `Final/`):
 
 | Script | Purpose |
 |--------|---------|
